@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Forcast</title>
+</head>
+<body>
+<h4>Use this <a href="https://www.latlong.net/" target="_blank">link</a> to find the lat&log </h4>
+  <form method="POST">
+    {% csrf_token %}
+    <table>
+    {{ form.as_p }}
+    </table>
+    <button> Submit </button>
+
+  </form>
+<br>
+Temperature: {{result.0}}
+<br>
+City: {{result.1}}
+<br>
+Description: {{result.2}}
+<br>
+<br>
+<a href="{% url 'home' %}"><button>Back To Home</button></a>
+</body>
+</html>

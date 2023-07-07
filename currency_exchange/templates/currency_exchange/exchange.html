@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Exchange</title>
+</head>
+<body>
+  <form method="POST">
+    {% csrf_token %}
+    <table>
+    {{ form.as_p }}
+    </table>
+    <button> Convert </button>
+
+  </form>
+
+<h4>result:</h4> <input value="{{result}}" readonly>
+<br>
+<br>
+<a href="{% url 'home' %}"><button>Back To Home</button></a>
+</body>
+</html>
