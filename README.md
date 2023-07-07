@@ -1,12 +1,44 @@
+
 # Django-Request-App
-A project to broaden understanding of requests and Django.
 
-# Task1 Building a Currency Exchange app
-Create a django project and build a Currency Exchange app. this app should take in the base currency (choice of currencies), conversion_currency (choice of currencies) and then amount to be converterted. the app should return the converted amount on the click of a button. you can get exchange rate information by calling https://exchangeratesapi.io/ api.
-![curr_exchange](https://github.com/dci-p22-e04/Django-Request-App/assets/28533190/988a6042-a1c4-423d-9a94-8dc9d9bef2fe)
+This project is designed to broaden your understanding of requests and Django. It consists of two tasks: building a Currency Exchange app and a Weather Forecast app.
 
+## Task 1: Currency Exchange App
 
-# Task2 Building a weather app
-add a Weather Forcast app to the Django project in Task1 above. this app should take in the longitude, and latitude values. the app should return the weather information of the particular longitude and latitude, on the click of a button. you can get weather information by visiting https://www.weatherbit.io/ .
+The Currency Exchange app allows you to convert an amount from one currency to another. It requires the base currency, conversion currency, and the amount to be converted. The app retrieves the exchange rate information from the https://api.freecurrencyapi.com/v1/latest API. To use the app, follow these steps:
 
-![weather](https://github.com/dci-p22-e04/Django-Request-App/assets/28533190/bbb73604-7b1c-40b2-b91c-d72511792fc8)
+1. Enter the base currency, conversion currency, and amount to be converted in the provided input fields.
+2. Click the "Convert" button.
+3. The app will display the converted amount based on the current exchange rates.
+
+## Task 2: Weather Forecast App
+
+The Weather Forecast app provides weather information based on longitude and latitude coordinates. It retrieves weather data from the [Weatherbit API](https://www.weatherbit.io/). To use the app, follow these steps:
+
+1. Enter the longitude and latitude values in the provided input fields.
+2. Click the "Submit" button.
+3. The app will display the weather information for the specified location.
+
+## Prerequisites
+python version 3.10
+listed in requirements.txt
+
+## Installation
+
+1. Clone the repository to your local machine
+2. Change to the project directory
+3. Install the project dependencies
+4. Run the Django development server
+5. Create APIs keys
+6. Access the app in your web browser.
+
+## Contributing
+
+Contributions are welcome! If you would like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with descriptive messages.
+4. Push your changes to your forked repository.
+5. Submit a pull request, explaining your changes.
+
