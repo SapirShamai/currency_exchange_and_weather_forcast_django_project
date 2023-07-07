@@ -15,9 +15,10 @@ def weather(request):
             latitude = request.POST.get('latitude')
             longitude = request.POST.get('longitude')
             api_request = make_api_request(latitude, longitude)
-            temp = api_request[0].get('app_temp')
-            city = api_request[0].get('city_name')
-            description = api_request[0].get('weather').get('description')
-            result = [temp, city, description]
+            if api_request:
+                temp = api_request[0].get('app_temp')
+                city = api_request[0].get('city_name')
+                description = api_request[0].get('weather').get('description')
+                result = [temp, city, description]
     return render(request, template, {'form': form, 'result': result})
 
